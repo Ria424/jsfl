@@ -1,0 +1,9 @@
+type PersistentDataTypeName = "byteArray" | "double" | "doubleArray" | "integer" | "integerArray" | "string";
+type PersistentDataType = number | number[] | string;
+type PersistentDataByte = number;
+type PersistentDataByteArray = PersistentDataByte[];
+type PersistentDataDouble = number;
+type PersistentDataDoubleArray = PersistentDataDouble[];
+type PersistentDataInteger = number;
+type PersistentDataIntegerArray = PersistentDataInteger[];
+type PersistentDataString = string;

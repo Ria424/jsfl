@@ -1,0 +1,25 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "cleanOutputDir": true,
+  "entryPoints": [
+    "./types/**/*.d.ts"
+  ],
+  "entryPointStrategy": "resolve",
+  "customFooterHtml": "<strong>Under construction</strong> / Generated using <a href='https://typedoc.org/' target='blank'>TypeDoc</a>",
+  "disableSources": true,
+  "excludeExternals": true,
+  "excludeProtected": true,
+  "hideGenerator": true,
+  "highlightLanguages": [
+    "bash",
+    "batch",
+    "javascript",
+    "typescript",
+    "xml"
+  ],
+  "logLevel": "Info",
+  "name": "JavaScript for Flash (JSFL)",
+  "out": "./site-dist",
+  "readme": "./site/introduction/working_with_the_javascript_api.md",
+  "tsconfig": "./tsconfig.json"
+}
