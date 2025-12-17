@@ -1014,6 +1014,21 @@ interface ArrayConstructor {
 
 declare var Array: ArrayConstructor;
 
+/////////////////////////////
+/// ECMAScript XML API
+/////////////////////////////
+
+interface XML {
+  [property: string]: XML
+}
+
+interface XMLConstructor {
+  new (xmlString: string): XML;
+  (xmlString: string): XML;
+}
+
+declare var XML: XMLConstructor;
+
 /**
  * Recursively unwraps the "awaited type" of a type. Non-promise "thenables" should resolve to `never`. This emulates the behavior of `await`.
  */
