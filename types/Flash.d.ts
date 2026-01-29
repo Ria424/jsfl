@@ -1334,13 +1334,13 @@ interface Flash {
 
   /**
    * Read-only property; The absolute path for the local user's Application directory in a platform-specific format.
-   * @since Adobe Flash Professional CS5.5. Flash CS5 might also have this property.
+   * @since Adobe Flash Professional CS5
    */
   readonly applicationDirectory: string;
 
   /**
    * Read-only property; The URI that indicates the absolute path of the folder containing the executable file of the Flash/Animate program.
-   * @since Adobe Flash Professional CS5.5. Flash CS5 might also have this property.
+   * @since Adobe Flash Professional CS5
    */
   readonly applicationURI: string;
 
