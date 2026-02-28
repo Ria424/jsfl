@@ -1018,8 +1018,35 @@ declare var Array: ArrayConstructor;
 /// ECMAScript XML API
 /////////////////////////////
 
+/**
+ * E4X XML object.
+ *
+ * Represents an XML node.
+ * Property access, index access, attribute access all return XML.
+ *
+ * @example
+ * 
+ * ```
+ * const xml = XML("<a><b id='1'>text</b></a>");
+ * xml.b["@id"].toString(); // "1"
+ * ```
+ * 
+ * Checking existence
+ * ```
+ * const xml = XML("<a><b/></a>");
+ * xml.b != undefined // true
+ * ```
+ */
 interface XML {
-  [property: string]: XML
+  /**
+   * Dynamic child / attribute access.
+   *
+   * xml.foo
+   * xml["foo"]
+   * xml[0]
+   */
+  [key: string]: XML;
+  [key: number]: XML;
 }
 
 interface XMLConstructor {
